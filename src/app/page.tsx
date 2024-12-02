@@ -1,8 +1,9 @@
+import AwesomeClients from "@/components/HomePage/AwesomeClients";
 
 export default function Home() {
   return (
-    <div>
-     
-    </div>
+    <main>
+        <AwesomeClients></AwesomeClients>
+    </main>
   );
 }
