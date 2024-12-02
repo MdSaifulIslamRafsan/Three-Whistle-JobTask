@@ -13,6 +13,9 @@ export default {
         foreground: "var(--foreground)",
         primary : "#F15C2E"
       },
+      fontFamily: {
+        poppinsRegular: ["var(--font-poppins-sans)", "cursive"],
+      }
     },
   },
   plugins: [],

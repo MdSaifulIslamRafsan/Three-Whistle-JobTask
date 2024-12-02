@@ -4,7 +4,7 @@ import "./globals.css";
 
 const Poppins = localFont({
   src: "./fonts/Poppins-Regular.ttf",
-  variable: "--font-geist-sans",
+  variable: "--font-poppins-sans",
   weight: "100 900",
 });
 
@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${Poppins.variable} antialiased`}
+        className={`${Poppins.variable}  antialiased`}
       >
         {children}
       </body>

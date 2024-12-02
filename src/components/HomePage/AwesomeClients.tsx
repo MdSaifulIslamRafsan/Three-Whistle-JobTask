@@ -28,10 +28,11 @@ const AwesomeClients = () => {
 
 
     return (
-        <div className="max-w-[1440px] w-10/12 mx-auto">
+        <section>
+             <div className="max-w-[1440px] w-[95%] md:w-11/12 lg:w-10/12 py-20 md:py-32 mx-auto">
             <div className="space-y-2">
-                <h1 className="text-primary text-4xl font-bold">Trusted by </h1>
-                <h1 className="text-4xl font-bold">Awesome clients</h1>
+                <h1 className="text-primary text-2xl sm:text-3xl md:text-4xl font-bold">Trusted by </h1>
+                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">Awesome clients</h1>
             </div>
             <div className="flex mt-14 justify-around">
                 {
@@ -41,6 +42,8 @@ const AwesomeClients = () => {
                 }
             </div>
         </div>
+                <Image src="/assets/line (1).png" alt="bottom-line" className="w-full" width={500} height={50} />
+        </section>
     );
 };
 
