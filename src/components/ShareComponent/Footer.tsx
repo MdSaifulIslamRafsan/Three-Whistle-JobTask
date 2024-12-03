@@ -8,7 +8,7 @@ import { MdOutlineEmail } from "react-icons/md";
 const Footer = () => {
     return (
       <footer className="py-10">
-        <section className="footer max-w-[1440px] w-[95%] md:w-11/12 lg:w-10/12 mx-auto  text-base-content p-10">
+        <section className="footer max-w-[1440px] w-[95%] md:w-11/12 lg:w-10/12 mx-auto  text-base-content py-10">
         <aside>
         <Link href="/">
         <Image src="/assets/Artboard 1@3x 1.png" alt="nav-logo" className={"w-40 h-10"} width={140} height={50} />
