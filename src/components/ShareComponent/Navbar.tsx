@@ -86,7 +86,7 @@ const Navbar = () => {
         </div>
         <ul
           tabIndex={0}
-          className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+          className="menu w-52 dropdown-content bg-base-100 rounded-box z-[1] mt-3  p-2 shadow"
         >
           {NavLinks.map((link : NavlinksType) => (
             <li key={link.path}>
@@ -105,7 +105,7 @@ const Navbar = () => {
         </ul>
       </div>
       <Link href="/">
-        <Image src="/assets/Artboard 1@3x 1.png" alt="nav-logo"  width={140} height={50} />
+        <Image src="/assets/Artboard 1@3x 1.png" alt="nav-logo" className={"w-40 h-10"} width={140} height={50} />
       </Link>
     </div>
 
@@ -117,10 +117,10 @@ const Navbar = () => {
             {link.submenu ? (
               <details>
                 <summary>{link.label}</summary>
-                <ul className="p-2 absolute left-0 bg-base-100 shadow-md rounded-box z-10">
+                <ul className="p-2 absolute left-0 bg-base-100 shadow-md w-44 rounded-box z-10">
                   {link.submenu.map((sublink) => (
-                    <li key={sublink.path}>
-                      <Link className={`${currentPath === link?.path && 'text-primary font-bold'}`} href={sublink.path}>{sublink.label}</Link>
+                    <li  key={sublink.path}>
+                      <Link className={`${currentPath === link?.path && 'text-primary  font-bold'}`} href={sublink.path}>{sublink.label}</Link>
                     </li>
                   ))}
                 </ul>
@@ -135,7 +135,7 @@ const Navbar = () => {
 
     {/* Navbar End */}
     <div className="navbar-end">
-      <Link href="/" className="btn px-5  sm:px-10 bg-primary rounded-full">Get in touch <FaArrowRight />
+      <Link href="/" className="btn sm:px-10 bg-primary rounded-full">Get in touch <FaArrowRight className="hidden sm:block" />
       </Link>
     </div>
   </div>
