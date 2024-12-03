@@ -1,13 +1,33 @@
+"use client"
 import { FaArrowRight } from "react-icons/fa";
 import Image from "next/image";
 import { FaStar } from "react-icons/fa";
-
+import { useState, useEffect } from 'react';
 const Banner = () => {
+    const [text, setText] = useState('Clicks'); 
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setText((prev) => {
+              if (prev === 'Clicks') return 'UI/UX';
+              if (prev === 'UI/UX') return 'Video';
+              return 'Clicks';
+            });
+          }, 2000); 
+  
+      return () => clearInterval(interval);
+    }, []);
     return (
         <section className="max-w-[1440px] w-[95%] md:w-11/12 lg:w-10/12 py-20 flex flex-col lg:flex-row gap-10 lg:gap-20 items-center justify-between md:py-32 mx-auto">
-            <div className="space-y-5">
+            <div className="space-y-5 max-w-md">
                 <p className="text-sm">1000+ PROJECT COMPLETED </p>
-                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">Increase <span>Clicks</span> with engaging Video Sales Letter</h1>
+                <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold overflow-hidden">
+      Increase{' '}
+      <span className="relative inline-block text-primary animate-bottom-to-up">
+        {text}
+      </span>{' '}
+      with engaging Video Sales Letter
+    </h1>
                  <button className="btn sm:px-10 bg-primary hover:bg-primary text-white border-none rounded-full">Get in touch
                  <FaArrowRight />
                 </button>
