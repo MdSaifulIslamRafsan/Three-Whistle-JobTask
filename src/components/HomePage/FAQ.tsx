@@ -35,11 +35,11 @@ const FAQ = () => {
                 <h1 className="text-primary text-2xl sm:text-3xl md:text-4xl font-bold">Frequently</h1>
                 <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">asked questions</h1>
             </div>
-            <div className="w-full mt-10  rounded-lg bg-white  *:mix-blend-difference dark:bg-zinc-800">
+            <div className="w-full mt-10 rounded-lg   *:mix-blend-difference">
             {FAQData.map((PerAccordion : FAQDataType  , idx) => (
-                <div key={idx} className="border-b-2 border-white rounded-lg px-4 py-3 ">
+                <div key={idx} className={`border-b-2 border-white rounded-lg px-4 py-3 ${isOpen === idx ? 'bg-[#0F0F0F] border-none pb-4' : ''}`}>
                     <button onClick={() => toggle(idx)} className="flex h-full w-full items-center justify-between font-medium text-white outline-none">
-                        <span className="text-left text-lg font-bold max-w-xs">{PerAccordion.title}</span>
+                        <span className="text-left text-lg font-bold sm:max-w-xs">{PerAccordion.title}</span>
                         <span className="rounded-full p-2">
                             <svg className="ml-8 size-3 shrink-0 fill-white" xmlns="http://www.w3.org/2000/svg">
                                 <rect y="5" width="12" height="2" rx="1" className={`origin-center transform transition duration-200 ease-out ${isOpen === idx && '!rotate-180'}`} />
@@ -48,7 +48,7 @@ const FAQ = () => {
                         </span>
                     </button>
                     <div className={`grid overflow-hidden  transition-all duration-300 ease-in-out ${isOpen === idx ? 'grid-rows-[1fr] pb-1 pt-3 opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
-                        <div className="overflow-hidden pr-4 text-sm">{PerAccordion.description}</div>
+                        <div className="overflow-hidden pr-4 text-sm text-[#8B8B8B]">{PerAccordion.description}</div>
                     </div>
                 </div>
             ))}

@@ -1,11 +1,20 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Navbar from "@/components/ShareComponent/Navbar";
 
 const Poppins = localFont({
-  src: "./fonts/Poppins-Regular.ttf",
+  src: [
+    {
+      path: "./fonts/Poppins-Regular.ttf",
+      weight: "400",
+    },
+    {
+      path: "./fonts/Poppins-Bold.ttf",
+      weight: "700",
+    },
+  ],
   variable: "--font-poppins-sans",
-  weight: "100 900",
 });
 
 
@@ -20,10 +29,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html data-theme="black" lang="en">
       <body
         className={`${Poppins.variable}  antialiased`}
       >
+            <Navbar></Navbar>
         {children}
       </body>
     </html>
