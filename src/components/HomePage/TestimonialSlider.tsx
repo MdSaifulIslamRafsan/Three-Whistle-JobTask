@@ -85,12 +85,12 @@ const TestimonialSlider = () => {
 </Swiper>
       {/* Navigation Buttons */}
         <div className="flex justify-center items-center gap-6 mt-5 lg:mt-0">
-        <div className="lg:absolute bottom-[50px] transform  right-14 z-40">
+        <div className="lg:absolute bottom-[90px] transform  right-14 z-40">
         <div className="swiper-button-prev-custom text-white bg-primary inline-block p-3 rounded-full shadow-lg cursor-pointer">
           <AiOutlineLeft className="text-2xl" />
         </div>
       </div>
-      <div className="lg:absolute bottom-[50px]  transform right-0 z-40">
+      <div className="lg:absolute bottom-[90px]  transform right-0 z-40">
         <div className="swiper-button-next-custom text-white bg-primary inline-block p-3 rounded-full shadow-lg cursor-pointer">
           <AiOutlineRight className="text-2xl" />
         </div>
