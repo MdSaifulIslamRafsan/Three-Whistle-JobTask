@@ -2,3 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
+.swiper-pagination{
+    position: absolute !important;
+    bottom: 40px !important;
+    
+   
+  }
+
+  .swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic{
+    left : 0% !important;
+    transform: translateX(0%)!important;
+  }
+
+   
+  .swiper-pagination-bullet{
+    background: white !important;
+    padding: 2px 20px ;
+    border-radius: 0px !important;
+    opacity: 1 !important;
+  }
+  .swiper-pagination-bullet-active{
+    background: #F15C2E !important;
+    padding: 2px 20px ;
+  }
+
+  
+
+  @media (max-width: 1023px) {
+    .swiper-pagination {
+      bottom: 350px !important;
+     margin : 0 auto;
+     width: 100% !important;
+    }
+}
+@media (max-width:500px) {
+    .swiper-pagination {
+      bottom: 400px !important;
+     margin : 0 auto;
+     width: 100% !important;
+    }
+}

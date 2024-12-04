@@ -25,7 +25,7 @@ const Video = () => {
 
   return (
     <>
-      <section className="w-full max-w-[1440px] mx-auto md:w-11/12 lg:w-10/12 py-20 ">
+      <section className="max-w-[1440px] w-[95%] mx-auto md:w-11/12 lg:w-10/12 py-20 ">
         {/* Thumbnail with Icon */}
         <div
           className="relative mx-auto bg-cover bg-center h-[500px] cursor-pointer rounded-2xl"
