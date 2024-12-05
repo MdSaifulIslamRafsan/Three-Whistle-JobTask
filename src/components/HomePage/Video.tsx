@@ -28,7 +28,7 @@ const Video = () => {
       <section className="max-w-[1440px] w-[95%] mx-auto md:w-11/12 lg:w-10/12 py-20 ">
         {/* Thumbnail with Icon */}
         <div
-          className="relative mx-auto bg-cover bg-center h-[500px] cursor-pointer rounded-2xl"
+          className="relative mx-auto bg-cover bg-center h-[864px] cursor-pointer rounded-2xl"
           onClick={toggleModal}
           style={{
             backgroundImage: `url('https://img.youtube.com/vi/${videoId}/maxresdefault.jpg')`, // YouTube video thumbnail
@@ -49,7 +49,7 @@ const Video = () => {
           >
             <div
               onClick={(e) => e.stopPropagation()}
-              className="w-full max-w-3xl bg-white rounded-lg overflow-hidden shadow-lg"
+              className="w-full max-w-5xl  bg-white rounded-lg overflow-hidden shadow-lg"
             >
               <button
                 onClick={toggleModal}

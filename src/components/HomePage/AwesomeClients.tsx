@@ -42,7 +42,7 @@ const AwesomeClients = () => {
                 }
             </div>
         </div>
-                <Image src="/assets/line (1).png" alt="bottom-line" className="w-full" width={500} height={50} />
+                <Image src="/assets/line (1).png" alt="bottom-line" className="w-full" width={2560} height={50} />
         </section>
     );
 };

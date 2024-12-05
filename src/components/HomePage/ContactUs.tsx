@@ -1,16 +1,17 @@
+import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
 
 const ContactUs = () => {
   return (
     <section
-      style={{ backgroundImage: 'url("/assets/bg.svg")' }}
-      className="w-full bg-center bg-cover"
+      className="w-full relative bg-white flex items-center"
     >
-      <div className="max-w-2xl w-[95%] lg:w-full py-10 md:py-40 space-y-5 text-black mx-auto">
-        <h1 className="text-2xl text-center sm:text-3xl md:text-5xl font-bold">
+       <Image src="/assets/Screenshot 2024-12-06 044516.png" alt="bottom-line" className="w-full absolute -top-3" width={2560} height={50} />
+      <div className="max-w-5xl w-11/12 lg:w-10/12 space-y-5 text-black py-20 md:py-28 lg:py-40 xl:py-52 mx-auto">
+        <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[80px] font-bold">
           Contact & Join Together
         </h1>
-        <p>
+        <p className="md:text-lg lg:text-20 xl:text-2xl ">
           Molestiae beatae, rem luctus, penatibus enim eu repellendu porttitor
           officia. Porro lorem, recusandae conubia.
         </p>
@@ -50,6 +51,7 @@ const ContactUs = () => {
     </div>
         </form>
       </div>
+      <Image src="/assets/Screenshot 2024-12-06 044617.png" alt="bottom-line" className="w-full absolute -bottom-3" width={2560} height={50} />
     </section>
   );
 };
