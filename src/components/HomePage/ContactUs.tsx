@@ -6,7 +6,7 @@ const ContactUs = () => {
       style={{ backgroundImage: 'url("/assets/bg.svg")' }}
       className="w-full bg-center bg-cover"
     >
-      <div className="max-w-2xl w-[95%] lg:w-full py-20 md:py-40 space-y-5 text-black mx-auto">
+      <div className="max-w-2xl w-[95%] lg:w-full py-10 md:py-40 space-y-5 text-black mx-auto">
         <h1 className="text-2xl text-center sm:text-3xl md:text-5xl font-bold">
           Contact & Join Together
         </h1>
