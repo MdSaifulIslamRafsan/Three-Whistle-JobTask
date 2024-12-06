@@ -18,7 +18,7 @@ const Banner = () => {
     return () => clearInterval(interval);
   }, []);
   return (
-    <section className="max-w-[1440px] w-[95%] md:w-11/12 lg:w-10/12 py-20 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center  md:py-32 mx-auto">
+    <section className="max-w-[1440px] w-11/12 lg:w-10/12 pt-20 md:pt-24 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center mx-auto">
       <div className="space-y-8">
         <p className="text-sm">1000+ PROJECT COMPLETED </p>
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-[80px] font-bold overflow-hidden">

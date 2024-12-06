@@ -1,5 +1,6 @@
 "use client"
 import { useState } from "react";
+import TitleAndDescription from "../ShareComponent/TitleAndDescription";
 
 interface FAQDataType {
     title : string,
@@ -30,12 +31,13 @@ const FAQ = () => {
     };
   
     return (
-        <section className="max-w-[1440px] w-[95%] md:w-11/12 lg:w-10/12 py-20 md:py-32 mx-auto">
-             <div className="space-y-2">
-                <h1 className="text-primary text-2xl sm:text-3xl md:text-4xl font-bold">Frequently</h1>
-                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">asked questions</h1>
-            </div>
-            <div className="w-full mt-10 rounded-lg   *:mix-blend-difference">
+        <section className="max-w-[1440px] w-11/12 lg:w-10/12 pt-20 md:pt-24 xl:pt-40 mx-auto">
+
+      <TitleAndDescription 
+        title="Frequently"
+        subTitle="asked questions"
+      />
+            <div className="w-full  rounded-lg   *:mix-blend-difference">
             {FAQData.map((PerAccordion : FAQDataType  , idx) => (
                 <div key={idx} className={`border-b-2 border-white rounded-lg px-4 py-3 ${isOpen === idx ? 'bg-[#0F0F0F] border-none pb-4' : ''}`}>
                     <button onClick={() => toggle(idx)} className="flex h-full w-full items-center justify-between font-medium text-white outline-none">

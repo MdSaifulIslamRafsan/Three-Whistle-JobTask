@@ -135,8 +135,9 @@ const Navbar = () => {
 
     {/* Navbar End */}
     <div className="navbar-end">
-      <Link href="/" className="btn sm:px-10 bg-primary rounded-full">Get in touch <FaArrowRight className="hidden sm:block" />
+      <Link href="/" className="btn sm:px-10 bg-primary hover:bg-primary text-white border-none rounded-full">Get in touch <FaArrowRight className="hidden sm:block" />
       </Link>
+
     </div>
   </div>
   </nav>

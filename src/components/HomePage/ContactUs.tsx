@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 const ContactUs = () => {
   return (
     <section
-      className="w-full relative bg-white flex items-center"
+      className="mt-20 md:mt-24 xl:mt-40 w-full relative bg-white flex items-center"
     >
        <Image src="/assets/Screenshot 2024-12-06 044516.png" alt="bottom-line" className="w-full absolute -top-3" width={2560} height={50} />
       <div className="max-w-5xl w-11/12 lg:w-10/12 space-y-5 text-black py-20 md:py-28 lg:py-40 xl:py-52 mx-auto">

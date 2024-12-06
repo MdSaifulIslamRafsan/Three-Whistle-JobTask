@@ -7,6 +7,7 @@ import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
 import Image from "next/image";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
+import TitleAndDescription from "../ShareComponent/TitleAndDescription";
 
 interface Testimonial {
   image: string;
@@ -34,15 +35,12 @@ const testimonials: Testimonial[] = [
 
 const TestimonialSlider = () => {
   return (
-    <div className="max-w-[1440px] w-[95%] md:w-11/12 lg:w-10/12 mx-auto relative">
-      <div className="space-y-2 pt-20 pb-10  xl:py-20">
-        <h1 className="text-primary text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-[80px] font-bold">
-          What
-        </h1>
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-[80px] font-bold">
-          our clients say
-        </h1>
-      </div>
+    <div className="max-w-[1440px] w-11/12 lg:w-10/12 pt-20 md:pt-24 xl:pt-40 mx-auto relative">
+      <TitleAndDescription
+        title=" What"
+        subTitle="our clients say"
+      />
+     
       {/* Swiper Component */}
      <Swiper
   navigation={{

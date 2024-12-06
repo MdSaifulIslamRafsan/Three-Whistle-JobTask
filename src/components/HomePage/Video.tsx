@@ -25,10 +25,10 @@ const Video = () => {
 
   return (
     <>
-      <section className="max-w-[1440px] w-[95%] mx-auto md:w-11/12 lg:w-10/12 py-20 ">
+      <section className="max-w-[1440px] w-11/12 lg:w-10/12 pt-20 md:pt-24 xl:pt-40 mx-auto">
         {/* Thumbnail with Icon */}
         <div
-          className="relative mx-auto bg-cover bg-center h-[864px] cursor-pointer rounded-2xl"
+          className="relative mx-auto bg-cover bg-center h-screen lg:h-[754px] xl:h-[854px] cursor-pointer rounded-2xl"
           onClick={toggleModal}
           style={{
             backgroundImage: `url('https://img.youtube.com/vi/${videoId}/maxresdefault.jpg')`, // YouTube video thumbnail
